@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Mercenaries</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="css/cyberpunk.css">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+      <!-- loader  -->
+      <div class="loader_bg" style="background-color: black ;">
+         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+      </div>
+      <!-- end loader -->
+      <div id="mySidepanel" class="sidepanel">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+         <a href="index.html">Home</a>
+         <a href="#about">About</a>
+         <a href="#we_Do">We Do</a>
+         <a href="#team">Our Team</a>
+         <a href="#testimonial">Testimonial</a>
+         <a href="#contact">Contact Us</a>
+         <a href="login.html">Login/Register</a>
+      </div>
+      <!-- header -->
+      <header>
+         <!-- header inner -->
+         <div class="header">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                     <div class="sea_icon d_none ">
+                        <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                     </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col logo_section">
+                     <div class="full">
+                        <div class="center-desk">
+                           <div class="logo">
+                              <a href="index.html"><img src="images/logo1.png" alt="#" /></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                     <div class="right_bottun">
+                        <button class="openbtn" onclick="openNav()"><img src="images/menu_icon.png" alt="#"/> </button> 
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <section class="cyberpunk about titlepage" style="height: 1000px;">
+           <h1 style="margin-top: 300px; margin-bottom: 20px;" class="cyberpunk">RFI/LFI/RCE Attacks.</h1>
+           <p class="cyberpunk inverse">
+                Queries to play around with. ?mode= :specifies what mode to use. available modes are read,remote,exec. <br>
+                &file= specify what filename to lookup <br>
+                &host= specify what host to look up <br>
+                ?mode=exec&file=[command] for RCE (i was lazy) <br>
+                Pro tip. Try and trigger xss with a github xss payload list. or a remote .txt file
+                Logfile poisoning are also available
+           </p>
+           <p class="cyberpunk " style="margin-top: 0px;">
+            Bonus. See if you can pop a reverse shell or hook yourself with BEef framework.
+           </p>
+     </section>
+
+     <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script>
+         function openNav() {
+           document.getElementById("mySidepanel").style.width = "250px";
+         }
+         
+         function closeNav() {
+           document.getElementById("mySidepanel").style.width = "0";
+         }
+      </script>
+      <!-- google map js -->
+      
+      <!-- end google map js --> 
